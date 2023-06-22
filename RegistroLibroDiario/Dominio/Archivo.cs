@@ -11,8 +11,8 @@ namespace Dominio
         public int Id { get; set; }
         public string Detalle { get; set; }
         public string Fecha { get; set; }
-        public double Ingreso { get; set; }
-        public double Egreso { get; set; }
+        public decimal Ingreso { get; set; }
+        public decimal Egreso { get; set; }
 
     }
 }

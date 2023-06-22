@@ -157,11 +157,11 @@ namespace Practicando
                 archivo.Fecha = txtFecha.Text;
                 if (rbIngreso.Checked)
                 {
-                    archivo.Ingreso = Convert.ToDouble(txtMonto.Text);
+                    archivo.Ingreso = Convert.ToDecimal(txtMonto.Text);
                 }
                 else
                 {
-                    archivo.Egreso = Convert.ToDouble(txtMonto.Text);
+                    archivo.Egreso = Convert.ToDecimal(txtMonto.Text);
                 }
                 negocio.Agregar(archivo);
                 MessageBox.Show("Registro con éxito!");
@@ -186,11 +186,11 @@ namespace Practicando
                 archivo.Detalle = txtDetalle.Text;
                 if (rbIngreso.Checked)
                 {
-                    archivo.Ingreso = Convert.ToDouble(txtMonto.Text);
+                    archivo.Ingreso = Convert.ToDecimal(txtMonto.Text);
                 }
                 else
                 {
-                    archivo.Egreso = Convert.ToDouble(txtMonto.Text);
+                    archivo.Egreso = Convert.ToDecimal(txtMonto.Text);
                 }
                 negocio.Editar(archivo);
                 MessageBox.Show("Registro editado con éxito!");

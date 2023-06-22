@@ -68,8 +68,8 @@ namespace Negocio
                     nota.Id = (int)datos.Lector["Id"];
                     nota.Detalle = (string)datos.Lector["Detalle"];
                     nota.Fecha = (string)datos.Lector["Fecha"];
-                    nota.Ingreso = (double)datos.Lector["Ingreso"];
-                    nota.Egreso = (double)datos.Lector["Egreso"];
+                    nota.Ingreso = (decimal)datos.Lector["Ingreso"];
+                    nota.Egreso = (decimal)datos.Lector["Egreso"];
                     registro.Add(nota);
                 }
                 return registro;
